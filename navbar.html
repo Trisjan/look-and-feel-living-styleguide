@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Projectnaam] living styleguide</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>[Projectnaam] styleguide v0.1</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/" class="active">Globals</a></li>
+        <li><a href="/">...</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Navbars</h2>
+
+      <section>
+        <h3>Navbar</h3>
+        <img src="assets\navbar.png" alt="image of navbar with 4 items" />
+
+        <h4>Wel doen</h4>
+        <p>Vertel hoe dingen toegepast moeten worden.</p>
+
+        <h4>Niet doen</h4>
+        <p>Vertel hoe dingen vooral niet toegepast moeten worden.</p>
+
+        <pre><code>     &lt;nav class="navbar"&gt;
+            &lt;ul class="nav-items"&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+
+nav {
+    padding-left: 4rem;
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f8f8;
+    margin: 0rem -0.5rem 0rem -0.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+.nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 0.75rem 0.75rem;
+    margin: 1.25rem 1.25rem;
+    color: #090940;
+  }
+
+    </main>
+  </body>
+</html>
