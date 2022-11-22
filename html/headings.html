@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Headings</title>
+    <link rel="stylesheet" href="../styles/style-images.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css" />
+    <!-- rigid square font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css" />
+    <!-- yrsa font -->
+</head>
+
+<body>
+    <header>
+        <h1>Visual Thinking styleguide v0.1</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="image"><a href="../index.html"><img src="../assets/logo-vt.png" alt="logo van visual Thinking"></a></li>
+            <li><a href="headings.html" class="active">Headings</a></li>
+            <li><a href="images.html">Images</a></li>
+            <li><a href="kleuren.html">Kleuren</a></li>
+            <li><a href="typografie.html">Typografie</a></li>
+            <li><a href="knoppen.html">Knoppen</a></li>
+            <li><a href="formulieren.html">Formulieren</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Headings</h2>
+        <section>
+            <h3>Headings</h3>
+            <img src="../assets/header vthbo.png" alt="screenshot van je header" />
+
+            <h4>Wel doen</h4>
+            <p>
+                Ga uit van 1rem = 20px. We gebruiken een schaal van 1.333 per
+                H-niveau.
+            </p>
+
+            <h4>Niet doen</h4>
+            <p>
+                Ga nooit bijvoorbeeld van &lt;h1&gt; naar &lt;h3&gt;, omdat dat er
+                mooier uitziet. Gebruik headings in de correcte hiërarchische volgorde
+                ( &lt;h1&gt; gevolgd door &lt;h2&gt;, enzovoort). Dit verbetert de
+                leesbaarheid voor alle gebruikers.
+            </p>
+
+            <!-- Om HTML in HTML te laten zien gebruik je &lt; voor de < en &gt; voor de > -->
+            <pre><code>&lt;header&gt;
+  &lt;h1&gt;Zo maak je een header&lt;/h1&gt;
+&lt;/header&gt;
+
+Gebruik voor hero &lt;p class="hero"&gt;Zo maak je een hero&lt;/p&gt;
+
+Header{
+  font-family: rigid-square, sans-serif;
+}
+
+h1 {
+  font-size: 63.15px;
+}
+
+h2 {
+  font-size: 47.37px;
+}
+
+h3 {
+  font-size: 35.54px;
+}
+
+h4 {
+  font-size: 26.66px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+header > h1 {
+  font-size: 1rem;
+  text-align: right;
+}
+  </code></pre>
+        </section>
+    </main>
+</body>
+
+</html>
