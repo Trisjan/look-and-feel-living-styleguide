@@ -12,6 +12,7 @@
 html {
   --white: #ffffff;
   --dark-blue: #090940;
+  --blue: #31439C;
   --orange: #feb51e;
   --rigid: rigid-square, sans-serif;
   --broodtekst: "yrsa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -169,12 +170,40 @@ h6 {
   font-family: var(--rigid);
 }
 
-.hexagon {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+.hexagon_wrapper {
+  display: inline-block;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
+
+.border_hexagon {
+  position: relative;
+  height: 76px;
+  width: 70px;
+  background: var(--white);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.hexagon {
+  position: absolute;
+  background-color: var(--blue);
+  top: 2px;
+  left: 2px;  
+  height: 71px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.hexagon img[src="../assets/send.svg"] {
+  position: absolute;
+  right: 0.6em;
+  bottom: 0.5em;
+}
+
+.hexagon img[src="../assets/close.svg"] {
+  position: absolute;
+  right: 0.81em;
+  bottom: 0.8em;
+}
+
 
 button {
   font-family: var(--rigid);
